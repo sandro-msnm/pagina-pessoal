@@ -17,7 +17,7 @@ Repositório criado para a entrega da atividade avaliativa da disciplina de **Pr
 ## 🖥️ Resultado Visual da Página
 Abaixo está a captura de tela demonstrando o layout final estruturado com as tecnologias aplicadas:
 
-![Resultado Final da Página Pessoal](print_projeto.png)
+![Resultado Final da Página Pessoal](./print_projeto.jpeg)
 
 ---
 *Desenvolvido por Sandro Moretti Simão do Nascimento Mendes.*
