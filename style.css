@@ -1,0 +1,137 @@
+/* Configuração Reset e Padrão da Página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* -------------------------------------------------------------
+   REQUISITO 4: Organização Geral da Página usando Grid Layout
+------------------------------------------------------------- */
+.container-principal {
+    display: grid;
+    /* Definição de 4 colunas para poder mesclar os elementos estruturais */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Modificação da área ocupada usando grid-column */
+.cabecalho {
+    grid-column: span 4; /* Ocupa todas as 4 colunas */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 4px solid #4a90e2;
+}
+
+.navegacao {
+    grid-column: span 1; /* Ocupa 1 coluna lateral */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.navegacao ul {
+    list-style: none;
+}
+
+.navegacao ul li {
+    margin-bottom: 12px;
+}
+
+.navegacao ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.conteudo-principal {
+    grid-column: span 3; /* Ocupa as 3 colunas restantes ao lado do nav */
+}
+
+.rodape {
+    grid-column: span 4; /* Ocupa o rodapé inteiro */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* Estilos internos da seção */
+.secao-interesses h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* -------------------------------------------------------------
+   REQUISITO 2: Organização dos Cartões com Grid Layout
+------------------------------------------------------------- */
+.grid-cartoes {
+    display: grid;
+    /* Divide o espaço em duas colunas iguais para os cartões */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Controle do espaçamento entre os cartões */
+}
+
+/* Requisito 5: Utilização de classes CSS para estilizar os cartões */
+.cartao {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    
+    /* -------------------------------------------------------------
+       REQUISITO 3: Organização Interna dos Cartões com Flexbox
+    ------------------------------------------------------------- */
+    display: flex;
+    flex-direction: column; /* Alinha elementos em coluna de cima para baixo */
+    justify-content: space-between; /* Distribui verticalmente de forma equilibrada */
+    gap: 15px; /* Espaçamento interno controlado entre os elementos */
+}
+
+.cartao h3 {
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.cartao p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Organização interna das tags com Flexbox inline */
+.tags-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px; /* Espaçamento controlado entre as tags */
+}
+
+.tag {
+    background-color: #ebf5ff;
+    color: #0066cc;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}

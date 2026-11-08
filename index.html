@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <!-- Requisito 5: Vínculo com a folha de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Requisito 4: Estrutura global controlada por Grid Layout -->
+    <div class="container-principal">
+        
+        <header class="cabecalho">
+            <h1>Minha Página Pessoal</h1>
+            <p>Estudante de Técnico em Informática para Internet</p>
+        </header>
+
+        <nav class="navegacao">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudo-principal">
+            <!-- Requisito 1: Nova Seção de Apresentação -->
+            <section class="secao-interesses">
+                <h2>Tecnologias e Interesses</h2>
+                <p class="subtitulo">Tecnologias, ferramentas e áreas que estudo e tenho interesse.</p>
+                
+                <!-- Requisito 2: Container dos cartões que usará Grid Layout -->
+                <div class="grid-cartoes">
+                    
+                    <!-- Requisito 1 & 3: Cartão 1 com título, conteúdo, tags e Flexbox interno -->
+                    <article class="cartao">
+                        <h3></> Desenvolvimento Web</h3>
+                        <p>Criação de sites e aplicações Web funcionais com HTML, CSS e JavaScript estruturados.</p>
+                        <div class="tags-flex">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </article>
+
+                    <!-- Requisito 1 & 3: Cartão 2 com título, conteúdo, tags e Flexbox interno -->
+                    <article class="cartao">
+                        <h3>☕ Java Backend</h3>
+                        <p>Desenvolvimento de aplicações back-end robustas com foco em qualidade de código.</p>
+                        <div class="tags-flex">
+                            <span class="tag">Java</span>
+                            <span class="tag">Spring</span>
+                            <span class="tag">API</span>
+                        </div>
+                    </article>
+
+                    <!-- Requisito 1: Cartão 3 -->
+                    <article class="cartao">
+                        <h3>🗄️ Banco de Dados</h3>
+                        <p>Modelagem de dados, construção de consultas estruturadas e persistência persistente.</p>
+                        <div class="tags-flex">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </article>
+
+                    <!-- Requisito 1: Cartão 4 -->
+                    <article class="cartao">
+                        <h3>🔀 Controle de Versão</h3>
+                        <p>Versionamento de código estruturado, colaboração em equipe e organização com repositórios.</p>
+                        <div class="tags-flex">
+                            <span class="tag">Git</span>
+                            <span class="tag">GitHub</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>&copy; 2026 - Desenvolvido para a disciplina de Programação Web I</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
